@@ -17,7 +17,7 @@ class AdminForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   protected function getEditableConfigNames() {
-    return array('node_detail_view_admin_settings');
+    return array('node_detail_view.settings');
   }
 
   /**
@@ -36,7 +36,7 @@ class AdminForm extends ConfigFormBase {
 
     $form['node_detail_view_default'] = array(
       '#type' => 'select',
-      '#default_value' => \Drupal::config('node_detail_view_admin_settings')->get('default_view'),
+      '#default_value' => \Drupal::config('node_detail_view.settings')->get('default_view'),
       '#title' => t('Default Viewing style for admin content page'),
       '#options' => array(
         t('List View'),
@@ -45,7 +45,7 @@ class AdminForm extends ConfigFormBase {
     );
     $form['node_detail_view_info_block'] = array(
       '#type' => 'select',
-      '#default_value' => \Drupal::config('node_detail_view_admin_settings')->get('info_block_class'),
+      '#default_value' => \Drupal::config('node_detail_view.settings')->get('info_block_class'),
       '#description' => t('<i>node_info_wrapper</i> will keep this div relative to other divs, <br /><i>node_info_wrapper_fixed</i> will keep this div fixed on screen.'),
       '#title' => t('Default class for positioning Node Info'),
       '#options' => $options,
@@ -57,7 +57,7 @@ class AdminForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    $config = \Drupal::getContainer()->get('config.factory')->getEditable('node_detail_view_admin_settings');
+    $config = \Drupal::getContainer()->get('config.factory')->getEditable('node_detail_view.settings');
     $config->set('default_view', $form_state->getValue('node_detail_view_default'))->save();
     $config->set('info_block_class', $form_state->getValue('node_detail_view_info_block'))->save();
     return parent::submitForm($form, $form_state);

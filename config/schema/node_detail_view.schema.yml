@@ -1,4 +1,4 @@
-node_detail_view_admin_settings:
+node_detail_view.settings:
   type: config_object
   label: 'Default View'
   mapping:

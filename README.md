@@ -1,9 +1,6 @@
-MODULE
 Node Detail View
--------------------------------------------------------------------------------
+================
 
-
-DESCRIPTION
 This module allows you to view a node on the /admin/content
 page itself along with the node's additional information. All you need is to
 install this module and visit /admin/content page. You will get info like :
@@ -24,32 +21,36 @@ You will see a drop-down at the top which has 2 states :
 
   -- Detailed View - Detailed View is the new version of content management
     that gives a preview of a node.
--------------------------------------------------------------------------------
 
 
-CONFIURE
+CONFIURATION
+------------
 To either keep a floating or static information tab, or to
 set the default content view, visit
 admin/config/user-interface/node_detail_view
--------------------------------------------------------------------------------
 
 
 OBJECTIVE
+---------
 The main objective for creating this module is to ease content management so
 that you do not need to visit /admin/content page again and again, you are
 provided with all the node titles at one place, and with this you can view any
 node at any given time.
--------------------------------------------------------------------------------
 
 
 INSTALLATION
+------------
   -- Download the module and place it in your modules directory.
   -- Enable the module: Administration > Modules (admin/modules)
   -- Visit /admin/content page
--------------------------------------------------------------------------------
+
+
+License
+-------
+This project is GPL v2 software. See the LICENSE.txt file in this directory for
+complete text.
 
 
 CREDITS
-Gauravjeet Singh < gauravjeet007@gmail.com >
-D.O. username < gauravjeet_singh >
--------------------------------------------------------------------------------
+-------
+Ported to Backdrop CMS by Gauravjeet Singh (https://github.com/gauravjeet).

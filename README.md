@@ -23,7 +23,7 @@ You will see a drop-down at the top which has 2 states :
     that gives a preview of a node.
 
 
-CONFIURATION
+CONFIGURATION
 ------------
 To either keep a floating or static information tab, or to
 set the default content view, visit
@@ -45,7 +45,7 @@ INSTALLATION
   -- Visit /admin/content page
 
 
-License
+LICENSE
 -------
 This project is GPL v2 software. See the LICENSE.txt file in this directory for
 complete text.

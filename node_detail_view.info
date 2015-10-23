@@ -1,4 +1,6 @@
 name = Node Detail View
 description = Detailed view/Preview of a node for better content management
 backdrop = 1.x
+type = module
+version = 1.x-1.0
 configure = admin/config/user-interface/node_detail_view

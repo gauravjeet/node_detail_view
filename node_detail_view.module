@@ -102,7 +102,7 @@ function node_detail_view_menu_contextual_links_alter(&$links, $router_item, $ro
  */
 function node_detail_view_form_node_admin_content_alter(&$form, &$form_state, $form_id) {
   if (isset($form['admin'])) {
-    drupal_add_css(drupal_get_path('module', 'node_detail_view') . '/node_detail_view.css');
+    drupal_add_css(drupal_get_path('module', 'node_detail_view') . '/css/node_detail_view.css');
 
     $form['view_style'] = array(
       '#type' => 'select',
